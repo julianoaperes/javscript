@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first code with Javascript</title>
+    <style> /* Comentário em CSS */
+        body {
+            background-color: blue;
+            color: white;
+            font: normal 20pt arial;
+        }
+        h1 {
+            color: rgb(255, 212, 22);
+        }
+    </style>
+</head> <!-- Comentário em HTML-->
+<body>
+    <h1>
+        Hellow, wordl!
+    </h1>
+    <p>I am free from the curse! </p>
+    <script> // Comentário em JavaScript
+    // The Number.parseInt (1) and Number.parseFloat (1.3) converts the string into a number. The her is another way Number(), it converts both possibilites. 
+       var n1 = Number.parseInt(window.prompt('Type a number: ')) // The window.prompt returns a string
+       var n2 = Number.parseFloat(window.prompt('Type another number: '))// The window.prompt returns a string
+       var n3 = Number(window.prompt('Type a number: '))
+       var s = n1 + n2 + n3 // It needs to be a number, not string
+
+       // To convert the string into a number, use String(s) or n.toString()
+      window.alert('The sum of the values is: ' + s.toString())
+    </script>
+
+    
+</body>
+</html>
