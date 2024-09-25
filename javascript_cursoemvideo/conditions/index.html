@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Watch</title>
+  </head>
+  <body>
+    <h1>Monitoring Traffic Speed</h1>
+    Speed Captured:<input type="number" name="txtspeed" id="txtspeed" />mph
+    <input type="button" value="Check" onclick="calcular()" />
+
+    <div id="res"></div>
+    <script>
+      function calcular() {
+        var txtspd = window.document.querySelector("input#txtspeed");
+        var res = window.document.querySelector("div#res");
+        var speed = Number(txtspd.value);
+        res.innerHTML = `<p>Your current speed is: <strong>${speed}mph.<strong><p>`;
+        if (speed > 60) {
+          res.innerHTML += `<p><strong>You have been fined for speeding!<strong><p>`;
+        }
+        res.innerHTML += `<p>Drive carefully and wear your seat belt.<p>`;
+      }
+    </script>
+  </body>
+</html>
